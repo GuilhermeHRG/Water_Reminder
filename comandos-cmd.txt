@@ -1,0 +1,4 @@
+cd C:\Windows\System32
+schtasks /create /tn "Lembrete de Beber Água" /tr "C:\Users\Cliente\Documents\lembrete-agua.html" /sc hourly /st 08:00
+schtasks /query /tn "Lembrete de Beber Água"
+schtasks /run /tn "Lembrete de Beber Água"
